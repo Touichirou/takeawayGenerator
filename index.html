@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Takeaway Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <h1 class="heading text">Takeaway or home-cooked dinner?</h1>
+
+        <p class="paragraph text">Do you buy a takeaway or order food too often? Why don't you let me decide what you're
+            having for dinner tonight? Click the 'generate' button and I'll generate a random number between 0-9 inclusive.
+            If the number is 9, you're in lucky; today is takeaway night! I'll generate the number at random, so you have a
+            10% chance of getting a 9. Good luck!
+        </p>
+
+        <div class="center">
+        <button id="random">Lucky roll</button>
+        </div>
+
+        <div class="result text"></div>
+
+        <div class="center takeawayDecider">
+        <button id="takeawayDecider">Tonight you're having...</button>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+            <div class="takeawayText text"></div>
+
+        <script src="javascript.js" async defer></script>
+    </body>
+</html>

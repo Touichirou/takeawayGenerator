@@ -1,0 +1,36 @@
+body {
+    background-color:black
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#takeawayDecider {
+    visibility: hidden;
+}
+
+.takeawayText {
+    font-size: 30px;
+    padding-top: 50px;
+}
