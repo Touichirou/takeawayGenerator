@@ -9,15 +9,18 @@ random.addEventListener('click', function() {
         takeawayDecider.style.visibility = 'visible';
         result.textContent = `You're in luck! I rolled a ${generatedNumber}! You can have a takeaway today!`
     } else if (generatedNumber === 8) {
+        takeawayDecider.style.visibility = 'hidden';
         result.textContent = `Sorry, but I rolled an ${generatedNumber}. Looks like you're cooking your own dinner tonight.`
-    } else (result.textContent = `Sorry, but I rolled a ${generatedNumber}. Looks like you're cooking your own dinner tonight.`)
-});
+    } else {
+        takeawayDecider.style.visibility = 'hidden';
+        result.textContent = `Sorry, but I rolled a ${generatedNumber}. Looks like you're cooking your own dinner tonight.`
+}});
 
 takeawayDecider.addEventListener('click', function() {
     let generatedNumber = Math.floor((Math.random() * 6)) + 1;
     if (generatedNumber === 1 || generatedNumber === 2) {
-        takeawayText.textContent = 'Order from Pizza Hut!';
+        takeawayText.textContent = 'Pizza Hut!';
     } else if (generatedNumber === 3 || generatedNumber === 4 ) {
-        takeawayText.textContent = 'Order from CoCo Ichi!';
-    } else (takeawayText.textContent = 'Order from KFC!');
+        takeawayText.textContent = 'CoCo Ichi!';
+    } else (takeawayText.textContent = 'KFC!');
 });
